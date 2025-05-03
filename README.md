@@ -23,3 +23,9 @@ Before applying the state, edit line 1 on file `agent.sls` to point to your Wazu
 Install Wazuh Agent on minion "agent":
 
     sudo salt 'agent' state.apply wazuh.server
+
+## Other
+
+This project was made as a part of course [Palvelinten Hallinta](https://terokarvinen.com/palvelinten-hallinta/).
+
+File [h5.md](https://github.com/lassihi/Wazuh-salt-module/blob/main/h5.md) is a report I made about this project in Finnish. It includes a demo for running the modules using Vagrant virtual machines.
