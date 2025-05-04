@@ -16,6 +16,8 @@ Install Wazuh central components on minion "server":
 
 Applying this state may take up to 15 minutese depending on minion's system resources.
 
+Dashboard admin username and password will be printed under function "Run install script".
+
 ### Wazuh Agent:
 
 Before applying the state, edit line 1 on file `agent.sls` to point to your Wazuh Indexer's IP-address. If you ran the command above use IP-address of "server" minion. Otherwise you will have to apply it later to the configuration file.
