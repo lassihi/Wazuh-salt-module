@@ -32,7 +32,7 @@ Dashboard admin username and password will be printed under function "Run instal
 
 ### Wazuh Agent:
 
-Before applying the state, edit line 1 on file `agent.sls` to point to your Wazuh Indexer's IP-address. If you ran the command above use IP-address of "server" minion. Otherwise you will have to apply it later to the configuration file.
+Before applying the state, edit line 1 on file `agent.sls` to point to your Wazuh Server's IP-address. If you ran the command above use IP-address of "server" minion. Otherwise you will have to apply it later to the configuration file.
 
 Install Wazuh Agent on minion "agent":
 
