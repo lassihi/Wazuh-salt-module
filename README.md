@@ -18,23 +18,23 @@ Tested with:
 
 ## Usage
 
-The directory [wazuh](https://github.com/lassihi/Wazuh-salt-module/tree/main/wazuh) includes `server.sls` and `agent.sls` states. Copy it to `/srv/salt/`.
+### Dowload repository with git:
 
-### Wazuh central components:
+        git clone https://github.com/lassihi/Wazuh-salt-module.git
 
-Install Wazuh central components on minion "server":
+After downloading the repository copy included folder wazuh to `/srv/salt/`.
 
-    sudo salt 'server' state.apply wazuh.server
+### Install Wazuh central components on minion 'server':
+
+        sudo salt 'server' state.apply wazuh.server
 
 Applying this state may take up to 15 minutese depending on minion's system resources.
 
 Dashboard admin username and password will be printed under function "Run install script".
 
-### Wazuh Agent:
+### Install Wazuh Agent on minion 'agent':
 
-Before applying the state, edit line 1 on file `agent.sls` to point to your Wazuh Server's IP-address. If you ran the command above use IP-address of "server" minion. Otherwise you will have to apply it later to the configuration file.
-
-Install Wazuh Agent on minion "agent":
+Before running the command, edit line 1 on file `agent.sls` to point to your Wazuh Server's IP-address. If you ran the command above use IP-address of 'server' minion. Otherwise you will have to apply it later to the configuration file.
 
     sudo salt 'agent' state.apply wazuh.server
 
@@ -43,3 +43,5 @@ Install Wazuh Agent on minion "agent":
 This project was made as a part of course [Palvelinten Hallinta](https://terokarvinen.com/palvelinten-hallinta/).
 
 File [h5.md](https://github.com/lassihi/Wazuh-salt-module/blob/main/h5.md) is a report I made about this project in Finnish. It includes a demo using Vagrant virtual machines.
+
+Made by: Lassi Hirvonen
