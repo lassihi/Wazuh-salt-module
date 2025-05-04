@@ -42,4 +42,4 @@ Install Wazuh Agent on minion "agent":
 
 This project was made as a part of course [Palvelinten Hallinta](https://terokarvinen.com/palvelinten-hallinta/).
 
-File [h5.md](https://github.com/lassihi/Wazuh-salt-module/blob/main/h5.md) is a report I made about this project in Finnish. It includes a demo for running the modules using Vagrant virtual machines.
+File [h5.md](https://github.com/lassihi/Wazuh-salt-module/blob/main/h5.md) is a report I made about this project in Finnish. It includes a demo using Vagrant virtual machines.
