@@ -4,6 +4,22 @@ Install and configure Wazuh central components (Wazuh Indexer, Wazuh Server, Waz
 
 [Wazuh](https://wazuh.com/) is an open source SIEM and XDR security platform. Its features include threat detection, integrity monitoring, incident response, and much more.
 
+## Supported Operating systems
+
+State `wazuh.server`: 
+* Ubuntu 24
+* Debian 12
+
+State `wazuh.agent`:
+* Ubuntu 24
+
+Tested with:
+* Ubuntu 24
+* Debian 12
+* Salt 3009
+* Wazuh 4.x
+
+
 ## Usage
 
 The directory [wazuh](https://github.com/lassihi/Wazuh-salt-module/tree/main/wazuh) includes `server.sls` and `agent.sls` states. Copy it to `/srv/salt/`.
