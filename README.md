@@ -6,7 +6,7 @@ Install and configure Wazuh central components (Wazuh Indexer, Wazuh Server, Waz
 
 ## Supported Operating systems
 
-State `wazuh.server`: Ubuntu 24.04, Debian 12
+State `wazuh.server`: Ubuntu 24.04, Debian 12 (works, but is not recommended by Wazuh)
 
 State `wazuh.agent`: Ubuntu 24.04
 
@@ -36,6 +36,16 @@ Dashboard admin username and password will be printed under the function "Run in
 Before running the command, edit line 1 in file `agent.sls` to point to your Wazuh Server's IP address. If you ran the command above, use IP address of 'server' minion. Otherwise, you will have to apply it later in the configuration file.
 
     sudo salt 'agent' state.apply wazuh.agent
+
+## Screenshots
+Wazuh Dashboard overview with one agent configured:
+
+![image](https://github.com/user-attachments/assets/df30854d-b981-4055-93f5-a01b410fd7f6)
+
+View "Endpoints" with one agent configured:
+
+![image](https://github.com/user-attachments/assets/5a258f9c-272b-441c-9d5b-41973fa4001e)
+
 
 ## Other
 
