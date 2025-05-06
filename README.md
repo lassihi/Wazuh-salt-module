@@ -17,6 +17,8 @@ Tested with:
 
 ## Usage
 
+Before continuing you must have [Salt](https://docs.saltproject.io/salt/install-guide/en/latest/) installed and configured on your environment.
+
 ### Download repository with Git:
 
         git clone https://github.com/lassihi/Wazuh-salt-module.git
