@@ -6,9 +6,12 @@ Install and configure Wazuh central components (Wazuh Indexer, Wazuh Server, Waz
 
 ## Supported Operating systems
 
-State `wazuh.server`: Ubuntu 24.04, Debian 12 (works, but is not recommended by Wazuh)
+State `wazuh.server`: 
+* Ubuntu 24.04
+* Debian 12 (works, but is NOT RECOMMENDED BY WAZUH so you might run into issues not related to this module)
 
-State `wazuh.agent`: Ubuntu 24.04
+State `wazuh.agent`: 
+* Ubuntu 24.04
 
 Tested with:
 * Ubuntu 24.04, Debian 12
