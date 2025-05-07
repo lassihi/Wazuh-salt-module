@@ -24,13 +24,13 @@ Before continuing you must have [Salt](https://docs.saltproject.io/salt/install-
 
 ### Download repository with Git:
 
-        git clone https://github.com/lassihi/Wazuh-salt-module.git
+    git clone https://github.com/lassihi/Wazuh-salt-module.git
 
 After downloading the repository, copy included `wazuh` folder to `/srv/salt/`.
 
 ### Install Wazuh central components on minion 'server':
 
-        sudo salt 'server' state.apply wazuh.server
+    sudo salt 'server' state.apply wazuh.server
 
 Applying this state may take up to 15 minutes, depending on minion's system resources.
 
@@ -39,7 +39,7 @@ Dashboard admin username and password will be printed under the function "Run in
 ### Install Wazuh Agent on minion 'agent':
 
 Before running the command, edit line 1 in file `agent.sls` to point to your Wazuh Server's IP address. If you ran the command above, use IP address of 'server' minion. Otherwise, you will have to apply it later in the configuration file.
-
+        
     sudo salt 'agent' state.apply wazuh.agent
 
 ## Screenshots
